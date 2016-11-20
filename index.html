@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+<body>
+<div id="headerDivImg" style="right:10px; z-index:2; float:right; position:fixed"> <a id="imageDivLink" href="javascript:toggle5('contentDivImg', 'imageDivLink');"><img src="plus.jpg"></a> </div>
+<div id="contentDivImg" style="display: none; right:10px; top: 100px; z-index:1; float:right; position:fixed"><img src="menu800.svg" border="0" usemap="#Map" width="800" height="800" />
+  <map name="Map" id="Map">
+    <area shape="rect" coords="720,374,777,427" href="#" />
+    <area shape="rect" coords="223,176,280,229" href="#" />
+    <area shape="rect" coords="26,74,74,123" href="#" />
+  </map>
+</div>
+<script>
+function toggle5(showHideDiv, switchImgTag) {
+        var ele = document.getElementById(showHideDiv);
+        var imageEle = document.getElementById(switchImgTag);
+        if(ele.style.display == "block") {
+                ele.style.display = "none";
+		imageEle.innerHTML = '<img src="plus.jpg">';
+        }
+        else {
+                ele.style.display = "block";
+                imageEle.innerHTML = '<img src="minus.jpg">';
+        }
+}
+</script>
+</body>
+</html>
